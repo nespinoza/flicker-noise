@@ -4,7 +4,7 @@ Python implementation of the Carter & Winn (2009) formalism for fitting 1/f nois
 
 Author: Nestor Espinoza (nespino@astro.puc.cl)
 
-About the code /
+About the code
 ---------------
 
 If you use this code for your research, please cite the work of 
@@ -15,14 +15,14 @@ For a tutorial on using this code, please go to:
 
   http://randomastronomy.wordpress.com/2014/07/14/a-python-with-a-long-memory-fitting-1f-noise-with-pymc/
 
-Dependencies /
+Dependencies 
 -------------
 
 To use this code you will need PyMC. To install it, go to:
 
           http://pymc-devs.github.io/pymc/
 
-Installation /
+Installation 
 -------------
 Run the install.py file by doing
 
