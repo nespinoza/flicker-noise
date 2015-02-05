@@ -15,6 +15,8 @@ For a tutorial on using this code, please go to:
 
   http://randomastronomy.wordpress.com/2014/07/14/a-python-with-a-long-memory-fitting-1f-noise-with-pymc/
 
+The codes used in the tutorial are under the "examples" folder; just run the "runMCMC.py" code to run the MCMC!
+
 Dependencies 
 -------------
 
