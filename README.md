@@ -2,7 +2,7 @@
 
 Python implementation of the Carter & Winn (2009) formalism for fitting 1/f noise to an indexed time-series with Python (using PyMC).
 
-Author: Nestor Espinoza (nespino@astro.puc.cl)
+Author: Néstor Espinoza (nespino@astro.puc.cl)
 
 About the code
 ---------------
