@@ -2,7 +2,9 @@ from distutils.core import setup, Extension
 import numpy
 
 """
-According to GSL documentation (http://www.gnu.org/software/gsl/manual/html_node/Shared-Libraries.html), in order to run the different operations one must include the GSL library, the GSLCBLAS library and the math library. To compile in C one must do:
+According to GSL documentation (http://www.gnu.org/software/gsl/manual/html_node/Shared-Libraries.html), 
+in order to run the different operations one must include the GSL library, the GSLCBLAS library and the 
+math library. To compile in C one must do:
   	
   gcc -Wall -c filename.c
 

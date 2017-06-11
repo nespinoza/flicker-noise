@@ -1,6 +1,17 @@
 #include <Python.h>
 #include <numpy/arrayobject.h>
 #include <sys/time.h>
+
+#if PY_MAJOR_VERSION >= 3
+#define IS_PY3K
+#endif
+
+// #if IS_PY3K
+// #define NUMPY_IMPORT_ARRAY_RETURN_TYPE int
+// #else
+// #define NUMPY_IMPORT_ARRAY_RETURN_TYPE void
+// #endif
+
 #define ARRAYD(p) ((double *) (((PyArrayObject *)p)->data)) 
 
 /* 
@@ -192,8 +203,24 @@ static PyMethodDef FWTMethods[] = {
 	{NULL, NULL, 0, NULL}
 };
 
-void initFWT(void){
-	(void) Py_InitModule("FWT", FWTMethods);
+// NUMPY_IMPORT_ARRAY_RETURN_TYPE initFWT(void){
+// 	(void) Py_InitModule("FWT", FWTMethods);
+// }
+
+static struct PyModuleDef FWT =
+{
+    PyModuleDef_HEAD_INIT,
+    "FWT", /* name of module */
+    "",          /* module documentation, may be NULL */
+    -1,          /* size of per-interpreter state of the module, or -1 if the module keeps state in global variables. */
+    FWTMethods
+};
+
+PyMODINIT_FUNC
+PyInit_FWT(void)
+{
+  import_array();
+  return PyModule_Create(&FWT);
 }
 
 
