@@ -23,7 +23,7 @@ try:
 except ImportError:
     from distutils.core import setup, find_packages, Extension
 
-module = Extension('FWT',
+module = Extension('flicker.Wavelets.FWT',
                    sources=['flicker/Wavelets/FWT.c'],
                    libraries=['m'],
                    include_dirs=[get_include(), '/usr/local/include'])
