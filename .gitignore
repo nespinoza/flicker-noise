@@ -1,2 +1,13 @@
 *.so
 *.pyc
+
+.DS_Store
+*.0
+
+build
+dist
+*egg*
+*broken*
+*log*
+bak*
+*save*
