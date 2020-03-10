@@ -1,3 +1,5 @@
+# https://stackoverflow.com/questions/42048421/how-to-package-a-python-c-extension-such-that-it-is-a-submodule-of-a-normal-pyth
+#  -- how to put c-code inside a submodule
 """
 According to GSL documentation (http://www.gnu.org/software/gsl/manual/html_node/Shared-Libraries.html), 
 in order to run the different operations one must include the GSL library, the GSLCBLAS library and the 
