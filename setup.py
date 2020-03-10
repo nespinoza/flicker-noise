@@ -24,7 +24,7 @@ except ImportError:
     from distutils.core import setup, find_packages, Extension
 
 module = Extension('FWT',
-                   sources=['FlickerNoise/WaveletCode/FWT.c'],
+                   sources=['flicker/WaveletCode/FWT.c'],
                    libraries=['m'],
                    include_dirs=[get_include(), '/usr/local/include'])
 
