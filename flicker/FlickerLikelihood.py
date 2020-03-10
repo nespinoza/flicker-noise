@@ -1,7 +1,7 @@
 import sys
 import numpy as np
 # from pymc import *
-import Wavelets
+from . import Wavelets
 
 
 def get_likelihood(residuals, sigma_w, sigma_r, gamma=1.0):
